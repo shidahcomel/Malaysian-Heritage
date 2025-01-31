@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysian Heritage Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+       
+        header {
+            background-color: #1E3A8A;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+
+        header h1 {
+            margin-top: 0;
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #ffcc00;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color:  #1E3A8A;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1.3em;
+            margin: 0 20px;
+            border-radius: 30px;
+            background-color: #ffcc00;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff9800;
+            color: white;
+            transform: scale(1.1);
+        }
+
+      
+        .info-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 30px;
+            justify-content: center;
+        }
+
+        .info-box {
+            background-color: #1E3A8A;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .info-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .info-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .info-box .info-content {
+            padding: 20px;
+            background-color:  #1E3A8A;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            color: white;
+        }
+
+        .info-box h2 {
+            font-size: 1.6em;
+            color: #ffcc00;
+            margin-bottom: 15px;
+        }
+
+        .info-box p {
+            font-size: 1.1em;
+            color: #f1f5f8;
+            line-height: 1.6;
+        }
+
+       
+        footer {
+            background: #1E3A8A;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.2em;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <header>
+        <img src="logo.png" alt="Logo" class="logo"> 
+        <h1>MALAYSIAN HERITAGE WEBSITE</h1>
+    </header>
+
+    
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="content.html">Content</a>
+        <a href="Author.html">Author</a>
+    </nav>
+
+   
+    <section class="info-container">
+        <div class="info-box">
+            <img src="muziumnegara2.png" alt="Image 1">
+            <div class="info-content">
+                <h2>National Museum</h2>
+                <p>The National Museum (Muzium Negara) of Malaysia features a theme focusing on the diversity of ethnic groups in the country. It showcases the rich cultural heritage, traditions, and history of Malaysia's various communities, including Malays, Chinese, Indians, and indigenous groups. Through exhibits and artifacts, the museum highlights the unique contributions of each ethnic group to the nation's development and unity, celebrating the country's multicultural identity.</p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <img src="muziumnegara.png" alt="Image 2">
+            <div class="info-content">
+                <h2>Race</h2>
+                <p>At the National Museum of Malaysia, exhibits showcase the country’s racial diversity through various cultural artifacts, traditional costumes, and historical displays. These highlight the distinct customs, languages, and practices of the Malay, Chinese, Indian, and indigenous communities. The museum also features displays on the historical migration of these groups, their contributions to the country’s development, and how they coexist in harmony today. Through these exhibits, visitors can learn about Malaysia's multicultural identity and its emphasis on unity in diversity.</p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <img src="muziumnegara1.png" alt="Image 3">
+            <div class="info-content">
+                <h2>Culture</h2>
+                <p>At the National Museum (Muzium Negara), visitors can explore exhibits that showcase Malaysia's rich cultural heritage. The museum displays traditional clothing, musical instruments, crafts, and art from various ethnic groups, including the Malays, Chinese, Indians, and indigenous communities. It also features cultural practices, historical artifacts, and items related to Malaysia's colonial past. The museum highlights the diverse traditions, customs, and lifestyles of the different communities, reflecting the nation's multicultural identity.</p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <img src="gametrad.jpg" alt="Image 4">
+            <div class="info-content">
+                <h2>Traditional Games</h2>
+                <p>At the National Museum of Malaysia, traditional games are showcased to highlight the cultural heritage of the country. Exhibits feature games that have been passed down through generations, such as Teng Teng, Gasing (spinning top), Guli, and Congkak (a mancala game). These games reflect Malaysia's diverse ethnic traditions and are an important part of the nation's cultural history.</p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <img src="tempatbersejarah.jpg" alt="Image 5">
+            <div class="info-content">
+                <h2>Historical Site</h2>
+                <p>The National Museum (Muzium Negara) showcases Malaysia’s historical sites through various exhibits. It features replicas, models, and artifacts from significant locations such as ancient temples, historical buildings, and monuments. Notable displays include the **Melaka Sultanate Palace**, **Fort Cornwallis**, and **Istana Raja**. These exhibits highlight Malaysia's rich history, including its colonial past, independence struggle, and cultural landmarks, offering visitors a glimpse into the country's heritage.</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2025 National Museum. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

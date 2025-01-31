@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisines</title>
+    <style>
+       body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+      
+        header {
+            background-color: #1E3A8A;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+
+        header h1 {
+            margin-top: 0;
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        
+        nav {
+            background: #ffcc00;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color:  #1E3A8A;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1.3em;
+            margin: 0 20px;
+            border-radius: 30px;
+            background-color: #ffcc00;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff9800;
+            color: white;
+            transform: scale(1.1);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1500px;
+            margin: 50 auto;
+        }  
+        .info-box {
+            position: relative;
+            width: 500px;
+            height: 400px;
+            border-radius: 20px;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+
+        .info-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        
+        .info-box img {
+            width: 90%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 15px; 
+        }
+
+      
+        .info-text {
+            padding: 0px;
+            width: 100%;
+        }
+
+        .info-text h2 {
+            font-size: 20px;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .info-text p {
+            font-size: 14px;
+            color: #ddd;
+            line-height: 1.5;
+        }
+        footer {
+            background: #1E3A8A;
+            color: #feffff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            position: inherit;
+
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .back-btn {
+            position: fixed;
+            top: 20px; 
+            left: 1400px; 
+            padding: 15px 30px;
+            background-color: #FFD700;
+            color: #1E3A8A;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #E5E7EB;
+            color: #1E3A8A;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo"> 
+        <h1>Welcome to Our Blue and Yellow Website</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="content.html">Content</a>
+        <a href="Author.html">Author</a>
+    </nav>
+
+
+
+    <div class="container">
+
+        <div class="container">
+            
+            <div class="info-box">
+                <img src="	Nasi Lemak.jpg" alt="Nasi Lemak">
+                <div class="info-text">
+                    <h2>Nasi Lemak</h2>
+                    <p>Nasi Lemak is a traditional Malay dish that is often sold in the morning as breakfast items. Nasi Lemak is a fragrant coconut milk rice and pandan, served alongside sambal (spicy chili paste-sauce), boiled egg/ fried egg, raw cucumber slices, roasted peanuts and deep fried anchovies. Nasi Lemak is also known as Malaysia’s national dish and this cuisine is quite popular in the neighbouring countries.</p>
+                </div>
+            </div>
+    
+            <div class="info-box">
+                <img src="Panipuri.jpg" alt="Panipuri">
+                <div class="info-text">
+                    <h2>Panipuri</h2>
+                    <p>Panipuri is a dish that is originated from India. Usually popular among the Indian community in Malaysia. Panipuri is a round, spherical thin crust that is served with a gravy made out of mint leaves and tamarind along with fillings that consists of potatoes, chickpeas and coriander leaves. To eat Panipuri, you must first break the crust and fill it with the filling before dipping them into the gravy and enjoy the taste.</p>
+                </div>
+            </div>
+    
+            <div class="info-box">
+                <img src="Kek Bulan.jpg" alt="Kek Bulan">
+                <div class="info-text">
+                    <h2>Kek Bulan</h2>
+                    <p>Kek Bulan or Mooncake is a traditional Chinese cakes that was introduced by Chinese community. The mooncakes are foods that is usually served in Chinese celebrations. It is a thick pastry crust filled with variations of fillings such as lotus paste, minced pork, red beans, salted duck egg yolk and mixed nuts. In Chinese culture, the roundness of Mooncakes symbolizes unity and completeness.</p>
+                </div>
+            </div>
+    
+            <div class="info-box">
+                <img src="Laksa.jpg" alt="Laksa">
+                <div class="info-text">
+                    <h2>Laksa</h2>
+                    <p>Laksa is a spicy broth noodle dish that is popular in Malaysia, Singapore and Indonesia. Laksa commonly uses thick rice noodles and a broth made from fish paste. Some Laksa uses thin noodles or curry as broth. Laksa is served with many kinds of toppings mixed in a bowl. There are many variations of Laksa in Malaysia such as Laksa Johor, Laksa Sarawak, Laksa penang, Nyonya Laksa, Laksam, Curry Laksa, Laksa Kuala Perlis and Laksa Utara.</p>
+                </div>
+            </div>
+    
+            <div class="info-box">
+                <img src="Roti Canai.jpg" alt="Roti Canai">
+                <div class="info-text">
+                    <h2>Roti Canai</h2>
+                    <p>Roti Canai is a staple cuisine commonly eaten as a breakfast in Malaysia. Roti Canai is a flatbread with a fluffy and flaky texture that is served along with dhal curry, spicy fish curry and sambal. Roti Canai is a favourite cuisine of Malaysia and several other neighbouring country in southeast asia like Indonesia and they are known as Roti Prata in Singapore. They are commonly sold by a food stall or a restaurant called "Mamak".</p>
+                </div>
+            </div>
+    
+            <div class="info-box">
+                <img src="Rendang.jpg" alt="Rendang">
+                <div class="info-text">
+                    <h2>Rendang</h2>
+                    <p>Rendang is a traditional cuisine that is originated in Sumatera, Indonesia and later, popularized in Malaysia as traditional cuisine that is served in celebration days like Hari Raya. Rendang is a spicy rich curry that was made by stewing meat in coconut milk and spices until it becomes tender. In Malaysia, Rendang are usually served with Lemang and Ketupat on Hari Raya or served with Pulut to celebrate a famillial events like wedding.</p>
+                </div>
+            </div>
+    
+            <div class="info-box">
+                <img src="abc.jpg" alt="Air Batu Campur">
+                <div class="info-text">
+                    <h2>Air Batu Campur</h2>
+                    <p>Air Batu Campur or commonly called as "ABC" in Malaysia is a Malaysian sweet sugary cold dessert. it is a shaved ice ice served with various kinds of ingredients mixed together such as red beans, grass jelly, coconut milk, sweet corns, condense or evaporated milk along with rose syrup. other toppings known for ABC is chocolates, mango, sago pearls and the most popular variation in Malaysia is ABCD (Air Batu Campur Durian) that uses durian fruit as the topping.</p>
+                </div>
+            </div>
+    
+            <div class="info-box">
+                <img src="Nasi Kerabu.jpg" alt="Nasi Kerabu">
+                <div class="info-text">
+                    <h2>Nasi Kerabu</h2>
+                    <p>Nasi Kerabu is a Malaysian rice dish with blue rice that received its colours from cooking it with bunga telalang (butterfly-pea flower). Nasi Kerabu rice is served with fried chicken, fish crackers and solok lada (stuffed peppers). This rice dish is also known to be a type of Nasi Ulam from Indonesia, and becomes a traditional dish of northeastern coast of west Malaysia, primarily in the state Terengganu and Kelantan. </p>
+                </div>
+            </div>
+    
+            <div class="info-box">
+                <img src="Nasi Dagang.jpg" alt="Nasi Dagang">
+                <div class="info-text">
+                    <h2>Nasi Dagang</h2>
+                    <p>Nasi Dagang is a breakfast food It is a breakfast food in the states on the East Coast of Peninsular Malaysia (Terengganu, Kelantan, parts of Pahang and eastern Johor). The main ingredients for this dish is steamed rice cooked with coconut milk, fenugreek seeds, shallot and lemongrass. this rice is served with fish curry, fried coconut, hard boiled egg, pickled vegetables and chili sambal.</p>
+                </div>
+            </div>
+        </div>
+        <a href="culture.html" class="back-btn">Back</a>
+        <footer>&copy; 2025 National Museum. All rights reserved.</footer>
+    
+    </body>
+    </html>

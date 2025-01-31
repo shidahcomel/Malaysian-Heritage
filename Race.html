@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race</title>
+    <style>
+       body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+        
+        header {
+            background-color: #1E3A8A;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+
+        header h1 {
+            margin-top: 0;
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+       
+        nav {
+            background: #ffcc00;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color:  #1E3A8A;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1.3em;
+            margin: 0 20px;
+            border-radius: 30px;
+            background-color: #ffcc00;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff9800;
+            color: white;
+            transform: scale(1.1);
+        }
+        .slider-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 20px auto;
+            overflow: hidden;
+            background: #E5E7EB;
+            border-radius: 20px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            padding: 20px;
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+            animation: fadeIn 1s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slide-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1E3A8A;
+        }
+        .slide img {
+            width: 60%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .description {
+            font-size: 1.1em;
+            color: #1E3A8A;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .navigation button {
+            background: #FFD700;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
+            
+        }
+        .navigation button:hover {
+            background: #E5E7EB;
+            color: #1E3A8A;
+        }
+        footer {
+            background: #1E3A8A;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.2em;
+            position: relative;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .back-btn {
+            position: fixed;
+            top: 20px; 
+            left: 1400px; 
+            padding: 15px 30px;
+            background-color: #FFD700;
+            color: #1E3A8A;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #E5E7EB;
+            color: #1E3A8A;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>RACE</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="content.html">Content</a>
+        <a href="Author.html">Author</a>
+    </nav>
+
+    <div class="slider-container">
+        <div class="slide active">
+            <div class="slide-title">Melayu</div>
+            <img src="raceMelayu.jpg" alt="Melayu">
+            <div class="description">The Malays (Melayu) are the largest ethnic group in Malaysia and are recognized as the native people of the land. They are predominantly Muslim and follow Malay customs known as adat. The Malay language, or Bahasa Melayu, is the national language of Malaysia. Traditional attire such as baju kurung for women and baju melayu for men reflects their cultural heritage. The Malays play a significant role in Malaysia’s politics and governance.</div>
+        </div>
+        <div class="slide">
+            <div class="slide-title">India</div>
+            <img src="raceIndia.jpg" alt="India">
+            <div class="description">The Indians in Malaysia are primarily of Tamil origin, with a significant number of Punjabis, Telugus, and Malayalees. They brought their rich traditions, languages, and religions, mainly Hinduism, Islam, and Christianity. The Tamil language is widely spoken, and cultural celebrations such as Deepavali and Thaipusam are important to the Indian community. Indian cuisine, including dishes like roti canai and nasi kandar, is a favorite among Malaysians.</div>
+        </div>
+        <div class="slide">
+            <div class="slide-title">Cina</div>
+            <img src="raceCina.jpg" alt="Cina">
+            <div class="description">The Chinese (Cina) are the second-largest ethnic group and have a strong presence in Malaysia’s economy. Most Malaysian Chinese are descendants of immigrants from China, particularly from Fujian, Guangdong, and Hainan provinces. They mainly practice Buddhism, Taoism, or Christianity and speak various Chinese dialects such as Mandarin, Cantonese, and Hokkien. Chinese festivals like Chinese New Year and the Mid-Autumn Festival are widely celebrated in Malaysia.</div>
+        </div>
+        <div class="slide">
+            <div class="slide-title">Iban</div>
+            <img src="raceIban.jpg" alt="Iban">
+            <div class="description">The Iban are the largest indigenous group in Sarawak, known for their warrior heritage and traditional longhouse communities. They traditionally practiced animism, but many have embraced Christianity. The Iban language is spoken among the community, and cultural traditions such as the ngajat dance and gawai dayak festival are integral to their identity. The Iban are also known for their intricate handwoven textiles called pua kumbu.</div>
+        </div>
+        <div class="slide">
+            <div class="slide-title">Kadazan-Dusun</div>
+            <img src="raceKadazandusun.jpg" alt="Kadazan-Dusun">
+            <div class="description">The Kadazan-Dusun are the largest indigenous group in Sabah, mainly practicing Christianity while retaining some traditional animist beliefs. They are known for their agricultural practices, especially rice cultivation, and celebrate the Kaamatan festival to mark the rice harvest season. The Sumazau dance and traditional attire, including the sinuangga for women, are unique cultural elements of the Kadazan-Dusun people.</div>
+        </div>
+        <div class="navigation">
+            <button onclick="changeSlide(-1)">&#10094;</button>
+            <button onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+    <a href="content.html" class="back-btn">Back</a>
+    <footer>&copy; 2025 National Museum. All rights reserved.</footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
+</body>
+</html>
+

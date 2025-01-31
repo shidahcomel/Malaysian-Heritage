@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration</title>
+    <style>
+       body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+       
+        header {
+            background-color: #1E3A8A;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+
+        header h1 {
+            margin-top: 0;
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+      
+        nav {
+            background: #ffcc00;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color:  #1E3A8A;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1.3em;
+            margin: 0 20px;
+            border-radius: 30px;
+            background-color: #ffcc00;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff9800;
+            color: white;
+            transform: scale(1.1);
+        }
+        .slider-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 20px auto;
+            overflow: hidden;
+            background: #E5E7EB;
+            border-radius: 20px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            padding: 20px;
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+            animation: fadeIn 1s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slide-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1E3A8A;
+        }
+        .slide img {
+            width: 60%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .description {
+            font-size: 1.1em;
+            color: #1E3A8A;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .navigation button {
+            background: #FFD700;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
+            
+        }
+        .navigation button:hover {
+            background: #E5E7EB;
+            color: #1E3A8A;
+        }
+        footer {
+            background: #1E3A8A;
+            color: #feffff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            position: inherit;
+
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .back-btn {
+            position: fixed;
+            top: 20px; 
+            left: 1400px; 
+            padding: 15px 30px;
+            background-color: #FFD700;
+            color: #1E3A8A;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #E5E7EB;
+            color: #1E3A8A;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo"> 
+        <h1>CELEBRATION</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="content.html">Content</a>
+        <a href="Author.html">Author</a>
+    </nav>
+
+    <div class="slider-container">
+        <div class="slide active">
+            <div class="slide-title">Hari Raya Aidilfitri</div>
+            <img src="Raya Aidilfitri.jpg" alt="Hari Raya Aidilfitri">
+            <div class="description">Hari raya Aidilfitri, also known as Eid al-Fitr, is one of the most significant celebrations in Malaysia, marking the end of Ramadan, the Islamic holy month of fasting. It is a joyous occasion where Muslims come together to celebrate their achievements after a month of devotion, prayer, and self-restraint from haram temptations. The day typically begins with sunnah prayers at mosques, followed by visits to the graves of loved ones to offer prayers and pay respects. Muslims also seek forgiveness from family members, symbolizing a fresh start and the strengthening of familial bonds.</div>
+        </div>
+        <div class="slide">
+            <div class="slide-title">Hari Raya Aidiladha</div>
+            <img src="Raya Aidiladha.jpg" alt="Hari Raya Aidiladha">
+            <div class="description">Hari Raya Aidiladha, also known as Eid al-Adha, is one of the most significant celebrations for Muslims in Malaysia, marking the culmination of the Hajj pilgrimage in Mecca. This festival commemorates the willingness of Prophet Ibrahim PBUH to sacrifice his son, Prophet Ismail PBUH as an act of obedience to God, symbolizing faith, devotion, and selflessness. In Malaysia, the day begins with special prayers at mosques, followed by the ritual slaughter (qurban) of halal livestock such as cows, goats, or sheep. The meat is then distributed among family, friends, and especially the less fortunate, reflecting the spirit of charity and community.</div>
+        </div>
+        <div class="slide">
+            <div class="slide-title">Deepavali</div>
+            <img src="Deepavali.jpg" alt="Deepavali">
+            <div class="description">Deepavali, also known as the Festival of Lights, is a significant celebration for Hindus in Malaysia, symbolizing the victory of light over darkness and good over evil. It commemorates the return of Lord Rama to Ayodhya after defeating the demon king Ravana, as well as other spiritual victories in Hindu mythology according to their beliefs. The festivities begin with early morning rituals, including a traditional oil bath (gangga snanam), which is believed to purify the body and soul. Families then visit temples to offer prayers and seek blessings, creating an atmosphere of spiritual renewal and gratitude.</div>
+        </div>
+        <div class="slide">
+            <div class="slide-title">Thaipusam</div>
+            <img src="Thaipusam.jpg" alt="Thaipusam">
+            <div class="description">Thaipusam is a major Hindu festival celebrated in Malaysia, dedicated to Lord Murugan, the Hindu god of war and victory. It commemorates the day when Parvati, the goddess of fertility, love, and devotion, gifted her son Murugan a divine spear to vanquish the demon Soorapadman. The festival is marked by a vibrant display of devotion, with thousands of devotees gathering at temples, the most prominent being Batu Caves in Selangor. The celebration often starts with a grand procession, where the statue of Lord Murugan is carried on a decorated chariot accompanied by traditional music and chanting.</div>
+        </div>
+        <div class="slide">
+            <div class="slide-title">Chinese New Year</div>
+            <img src="Chinese New Year.jpg" alt="Chinese New Year">
+            <div class="description">Chinese New Year, or Lunar New Year, is one of the most vibrant and widely celebrated festivals in Malaysia, particularly by the Chinese community in Malaysia. It marks the beginning of the new lunar calendar that symbolizes prosperity, good fortune, and renewal. Preparations begin weeks in advance, with families cleaning their homes to sweep away bad luck and decorating with red lanterns, banners, and couplets to attract positive energy (ong). The celebration traditionally starts with a family reunion dinner on New Year’s Eve, where dishes like yee sang and dumplings are enjoyed, each carrying symbolic meanings of abundance and unity.</div>
+        </div>
+        <div class="slide">
+            <div class="slide-title">Chap Goh Mei</div>
+            <img src="Chap Goh Mei.jpg" alt="Chap Goh Mei">
+            <div class="description">Chap Goh Mei, also known as the Lantern Festival, marks the fifteenth and final day of Chinese New Year celebrations in Malaysia. It is often referred to as the "Chinese Valentine’s Day" due to the traditional customs where unmarried women would throw mandarin oranges into rivers or seas, hoping to find a suitable partner. These oranges are often inscribed with the woman’s name or contact details, adding a romantic touch to the festive atmosphere. The day is also a time for families to come together for one last reunion dinner, signifying unity and harmony.</div>
+        </div>
+        <div class="slide">
+            <div class="slide-title">Pesta Kaamatan</div>
+            <img src="Pesta Kaamatan.jpg" alt="Pesta Kaamatan">
+            <div class="description">Pesta Kaamatan, also known as the Harvest Festival, is celebrated annually by the Kadazan-Dusun and other indigenous communities in Sabah, Malaysia. Observed throughout the month of May, with the grand finale on May 30th and 31st, it is a time to give thanks to the rice spirit, Bambaazon, for a bountiful harvest. The festival is steeped in cultural and spiritual significance, with rituals such as the Magavau ceremony, where traditional priests or bobohizan offer prayers to appease the rice spirit and ensure future prosperity.</div>
+        </div>
+        <div class="navigation">
+            <button onclick="changeSlide(-1)">&#10094;</button>
+            <button onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+    <a href="culture.html" class="back-btn">Back</a>
+    <footer>&copy; 2025 National Museum. All rights reserved.</footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
